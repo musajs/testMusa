@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+img{
+    width: 400px;
+    padding: 0;
+}
+
+.wraper{
+max-width: 400px;
+margin: 0 auto;
+}
+
+.accordion_input{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+
+.accordion-item{
+    position: relative;
+
+    margin-bottom: 10px;
+   
+}
+
+.accordion_trigger{
+    display: block;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.accordion_content{
+    padding: 20px;
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+.accordion_content_img{
+    padding: 0;
+    display: none;
+}
+.accordion_input:checked~.accordion_trigger{
+    
+}
+.accordion_input:checked~.accordion_content {
+    display: block;
+}
+.accordion_input:checked~.accordion_content_img {
+    display: block;
+}
+
